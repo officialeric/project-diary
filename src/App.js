@@ -1,8 +1,19 @@
+import { BrowserRouter , Routes , Route } from "react-router-dom";
+import { Home , LoginPage , RegisterPage , DashBoard} from "./pages";
 
-function App() {
+const App = () => {
   return (
-   <p>Heelo world</p>
-  );
+    <>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />}/>
+      <Route path="/login" element={<LoginPage />}/>
+      <Route path="/register" element={<RegisterPage />}/>
+      <Route path="/dashboard" element={<DashBoard />}/>
+    </Routes>
+    </BrowserRouter>
+    </>
+  )
 }
 
-export default App;
+export default App
