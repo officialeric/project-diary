@@ -13,7 +13,7 @@ const Home = () => {
         </div>
         <div className="main__details">
             <p className='main__header'>Create.Keep.Ideas</p>
-            <p className='main__desc'>With Project Diary By Maintaining Your Project Records!</p>
+            <p className='main__desc'>With <span>Project Diary</span> By Maintaining Your Project Records!</p>
             <div className="btn">
                 <Link to='/login'>
                 <button class="bg-orange-500 text-orange-700 font-semibold text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded">
