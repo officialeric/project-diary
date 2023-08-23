@@ -1,5 +1,5 @@
-import x from '../utils/x2.jpg'
-import github from '../utils/github.png'
+import { Link } from "react-router-dom"
+
 const Home = () => {
   return (
       <div className="container">
@@ -16,7 +16,9 @@ const Home = () => {
         </p>
         </div>
         <div className="header__btns">
+          <Link to='/login'>
             <button className='get-started'>Get Started</button>
+          </Link>
             <button className='learn-more'>Learn More</button>
         </div>
         
