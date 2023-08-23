@@ -1,32 +1,28 @@
-import logo from '../utils/PD-logo2.png'
-import { Link } from 'react-router-dom'
-
+import x from '../utils/x2.jpg'
+import github from '../utils/github.png'
 const Home = () => {
   return (
-    <>
-    <body>
-      <div className="main">
-        <div className="main__header">
-            <img src={logo} 
-                 alt="pd-logo" 
-                 className='main__logo'/>
+      <div className="container">
+        <div className="main">
+        <p className="header">
+           <span className="create">Create</span>.<span className="preview">Preview</span>.<span className="keep">Keep</span>
+        </p>
+        <div className="details">
+        <p className="header__details">
+            Showcase your Ideas and let <span>Project Diary </span>
+             properly manage them by Providing you greatest 
+             and trusted platform for creating , keeping and tracking 
+             your progress untill you achieve your Goals!
+        </p>
         </div>
-        <div className="main__details">
-            <p className='main__header'>Create.Keep.Ideas</p>
-            <p className='main__desc'>With <span>Project Diary</span> By Maintaining Your Project Records!</p>
-            <div className="btn">
-                <Link to='/login'>
-                <button class="bg-orange-500 text-orange-700 font-semibold text-white py-2 px-4 border border-orange-500 hover:border-transparent rounded">
-                  Get Started
-                </button> 
-                </Link>           
-           </div>
+        <div className="header__btns">
+            <button className='get-started'>Get Started</button>
+            <button className='learn-more'>Learn More</button>
+        </div>
+        
         </div>
       </div>
-      
-    </body>
-    </>
-  )
+    )
 }
 
 export default Home
