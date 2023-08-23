@@ -4,7 +4,8 @@
 }
 :root {
     --bg-color:#000;
-    --bg-dark:#3a3a3a;
+    --flowspace:#161B22;
+    --bg-dark:#4d4d4d;
     --bg-black:#111111;
     --color-white:#ededed;
     --color-primary:#7634d8;
@@ -164,4 +165,57 @@ form a{
     position: relative;
     text-align: center;
     text-decoration: none;
+}
+
+/* flowspace */
+.flowspace {
+    background: #0D1117;
+    width: 100vw;
+    height: 100vh;
+}
+.nav-bar__container {
+    background: #000;
+    padding: 1em;
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar__left {
+    display: flex;
+    gap: 1em;
+}
+.left__menu {
+    padding: 0 .2em;
+    color: var(--bg-dark);
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--bg-dark);
+    cursor: pointer;
+}
+.left__logo p {
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient(
+        to right, #7F26C6,#E7078D);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+}
+.nav-bar__middle p {
+    font-size: 20px;
+    color: #777777;
+}
+.nav-bar__middle span{
+    background-color: var(--flowspace);
+    padding: .4em;
+    border-radius: .2em;
+    color: var(--bg-dark);
+    border:1px solid var(--bg-dark);
+}
+.nav-bar__right .add{
+    color: var(--bg-dark);
+    font-size: 45px;
+    cursor: pointer;
 }

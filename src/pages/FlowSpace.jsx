@@ -1,10 +1,13 @@
-import React from 'react'
+import { NavBar } from "../compponents"
 
 const FlowSpace = () => {
   return (
-<body>
-    
-</body>  
+   <>
+   <div className="flowspace">
+   <NavBar />
+
+   </div>
+   </>
 )
 }
 
