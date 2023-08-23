@@ -16,9 +16,9 @@ const LoginPage = () => {
             <label htmlFor="password">Password</label>
             <input type="password" name='password' id='password'
                    placeholder='password'/>
-
+             <Link to='/flowspace'>
             <input type="submit" value="Sign in" />
-
+            </Link>
             <p className="bottom__text">
               Don't have an account? <Link to="/register">Register</Link>
             </p>

@@ -219,3 +219,48 @@ form a{
     font-size: 45px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 480px) {
+    .main  {
+        margin-top: 2em;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap:-.2em;
+        font-size: 80px;
+    }
+    .header__details {
+        font-size: 20px;
+        width: 100%; 
+        margin-top: 1em;
+        line-height: 35px;
+    }
+    .header__btns {
+        display: flex;
+        margin-top: 3em;
+    }
+    .header__btns button {
+        padding: .9em 2em;
+        border-radius: 2em;
+        font-size: 15px;
+        cursor: pointer ;
+        transition: ease-in-out 300ms;
+    }
+    .learn-more {
+        margin-left: 1em;
+    }
+    form {
+        margin-top: 30%;
+        padding: 2em;
+        border: 1px solid #3a3a3a;
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+        color: #ededed;
+        gap: .7em;
+    }
+    .nav-bar__middle {
+        display: none;
+    }
+  }

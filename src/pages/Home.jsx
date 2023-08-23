@@ -5,7 +5,7 @@ const Home = () => {
       <div className="container">
         <div className="main">
         <p className="header">
-           <span className="create">Create</span>.<span className="preview">Preview</span>.<span className="keep">Keep</span>
+           <span className="create">Create.</span><span className="preview">Preview.</span><span className="keep">Keep.</span>
         </p>
         <div className="details">
         <p className="header__details">

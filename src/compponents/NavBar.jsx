@@ -13,7 +13,7 @@ const NavBar = () => {
         </div>
     </div>
     <div className="nav-bar__middle">
-        <p>Project / <span>project-diary</span></p>
+        <p>FlowSpace / <span>project-diary</span></p>
     </div>
     <div className="nav-bar__right">
         <div className="add">
