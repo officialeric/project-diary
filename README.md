@@ -1,4 +1,4 @@
-# Create.Preview.Keep with Project Dairy by keeping your products records
+# Create.Preview.Keep with Project Dairy by keeping your projects records
 
 Showcase your Ideas and let Project Diary 
 properly manage them by Providing you greatest 
