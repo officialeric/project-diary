@@ -1,12 +1,18 @@
 import { NavBar , FlowControl , RecentControl , ProfileControl } from "../compponents"
 
 const FlowSpace = () => {
+
+  function showSidebar(){
+    const sidebar = document.getElementById('side-bar');
+    sidebar.classList.toggle("side-bar__active");
+  }
+
   return (
    <>
    <div className="flowspace">
-   <NavBar />
+   <NavBar showSidebar={showSidebar}/>
     
-    <div className="side-bar">
+    <div className="side-bar" id="side-bar">
       Side bar
     </div>
 
@@ -21,7 +27,7 @@ const FlowSpace = () => {
       </div>
      </div>
      <div className=" profile-control">
-     <p className="top-header">Profile</p>
+     <p className="top-header">Your Profile</p>
       <div className="flowspace__content">
       <ProfileControl />
       </div>

@@ -1,13 +1,41 @@
 import { AiOutlineEdit} from 'react-icons/ai'
 import { AiFillDelete} from 'react-icons/ai'
+import { useState } from 'react'
+import axios from 'axios'
 
 const FlowControl = () => {
+  const [flow, setflow] = useState()
+
+  const SendData = (e) =>{
+    // e.preventDefault();
+    
+    let formData = new FormData();
+    formData.append('flow',flow);
+
+    axios({
+      method : 'post',
+      url : 'http://localhost/project-diary/index.php/',
+      data : formData ,
+      config : { header : {
+        'Content-Type' : 'multipart/form-data'
+      }}
+    })
+    .then(function (response) {
+      console.log(response);
+      alert('data added!');
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+
+  }
+
   return (
     <div>
-      <form className='flow-form'>
-        <textarea name="" id="" 
+      <form className='flow-form' onSubmit={SendData}>
+        <textarea name="" id="" value={flow} onChange={(e)=> setflow(e.target.value)}
               placeholder='Start flowing ...' autoFocus/>
-        <button>Create Flow</button>
+        <button type='submit'>Create Flow</button>
       </form>
       <div className="search-bar">
         <input type="search" placeholder='search flow..'/>
@@ -27,7 +55,8 @@ const FlowControl = () => {
               <div className="edit-box">
               <AiOutlineEdit/>
               </div>
-              <div className="erase-box">
+              <div className="erase-box"
+              onClick={()=> window.confirm('Are you sure to delete this flow ?`')}>
                 <AiFillDelete/>
               </div>
             </div>

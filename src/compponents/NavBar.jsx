@@ -1,12 +1,13 @@
 import {BsList} from 'react-icons/bs'
-import {AiOutlinePlusCircle} from 'react-icons/ai'
+import {FiLogOut} from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
-const NavBar = () => {
+const NavBar = ({showSidebar}) => {
   return (
    <div className="nav-bar__container">
     <div className="nav-bar__left">
         <div className="left__menu">
-            <BsList />
+            <BsList onClick={showSidebar}/>
         </div>
         <div className="left__logo">
             <p>Project Diary</p>
@@ -16,9 +17,11 @@ const NavBar = () => {
         <p>FlowSpace / <span>project-diary</span></p>
     </div>
     <div className="nav-bar__right">
+        <Link to='/login'>
         <div className="add">
-            <AiOutlinePlusCircle/>
+            <FiLogOut/>
         </div>
+        </Link>
     </div>
    </div>
   )

@@ -216,7 +216,7 @@ form a{
 }
 .nav-bar__right .add{
     color: var(--bg-dark);
-    font-size: 45px;
+    font-size:35px;
     cursor: pointer;
 }
 
@@ -234,7 +234,6 @@ form a{
     position: relative;
     border:1px solid var(--bg-dark);
     padding: 1em;           
-    margin-top: ;
 }
 .flow-control {
     position: relative;
@@ -245,6 +244,7 @@ form a{
 }
 .top-header {
     font-size: 23px;
+    margin-bottom: .8em;
 }
 .flow-form {
     border: none;
@@ -339,6 +339,65 @@ form a{
     /* 13em */
     height: 90vh;
     z-index: 1;
+    transition: ease .5s;
+}
+.side-bar__active {
+    position: absolute;
+    background-color:black;
+    left: 0;
+    overflow-x: hidden; 
+    width: 13em; 
+    /* 13em */
+    height: 90vh;
+    z-index: 1;
+}
+.profile-img {
+    display: flex;
+    justify-content: center;
+}
+.profile-img img {
+    height: 8em;
+    width: 7.5em;
+    border-radius: 50%;
+}
+.profile-info p {
+    text-align: center;
+    margin-top: 1em;
+    color: blue;
+    cursor: pointer;
+}
+.profile-info li{
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+    font-size: 18px;
+}
+.profile-info li a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 18px;
+}
+.profile-info .value:hover,
+.profile-info li a:hover {
+    color: blue;
+    cursor: pointer;
+}
+.profile-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.profile-btn button {
+    border: none;
+    background: rgb(2, 81, 2);
+    color: #fff;
+    padding: 1em 1em;
+   cursor: pointer;
+}
+.side-bar {
+    color: #ededed;
+    padding-top: 2em;
 }
 @media only screen and (max-width: 480px) {
     .main  {
