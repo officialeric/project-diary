@@ -1,5 +1,5 @@
 import { BrowserRouter , Routes , Route } from "react-router-dom";
-import { Home ,RegisterPage , LoginPage , FlowSpace} from "./pages";
+import { Home ,RegisterPage , LoginPage , FlowSpace } from "./pages";
 
 const App = () => {
   return (

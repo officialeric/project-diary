@@ -171,7 +171,7 @@ form a{
 .flowspace {
     background: #0D1117;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 .nav-bar__container {
     background: #000;
@@ -220,6 +220,126 @@ form a{
     cursor: pointer;
 }
 
+.flowspace__container {
+
+    margin-top: 1em;
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 35% auto;
+    gap: 1em;
+    padding: 1em 3em;
+    color: #edededa1;
+}
+.flowspace__content {
+    position: relative;
+    border:1px solid var(--bg-dark);
+    padding: 1em;           
+    margin-top: ;
+}
+.flow-control {
+    position: relative;
+    border: none;
+    padding: 0;
+    height:auto;
+    width: 100%;
+}
+.top-header {
+    font-size: 23px;
+}
+.flow-form {
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction:column;
+    margin-top: 0; 
+    width: 100%;   
+}
+.flow-form textarea {
+    border:1px solid #7777;
+    background:#3a3a3a77;
+    padding:1em;
+    position: relative;
+    max-width: 90%;
+    height: 5em;
+    max-height: 5em;
+    color: #ededed;
+}
+        
+.flow-form button {
+    width: 30%;
+    margin-left:65.4%;
+    border: none;
+    background: rgb(2, 81, 2);
+    color: #999999;
+    padding: .6em .4em;
+}
+.search-bar {
+    padding: 1em 0;
+}
+.search-bar input {
+    border: 1px solid #3a3a3a;
+    background: #3a3a3ac7;
+    padding: .7em;
+    color: white;
+}
+.search-bar h3 {
+    margin-top: 1em;
+}
+.flow-list {
+    position: relative;
+    overflow-y: auto;
+     height: 20em;
+     width: 96%;
+}
+.flow {
+    border-bottom: 1px solid #4d4d4d;
+    margin-bottom: 1em;
+}
+.flow-footer {
+    margin-top: 1em;
+    padding-right: 2em;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+}
+.icons-box{
+    display: flex;
+    gap: 1em;
+}
+.edit-box {
+    padding: .3em;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    background: rgb(2, 81, 2);
+}
+.erase-box {
+    padding: .3em;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    background: red;
+}
+.date {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.side-bar {
+    position: absolute;
+    background-color:black;
+    left: 0;
+    overflow-x: hidden; 
+    width: 0; 
+    /* 13em */
+    height: 90vh;
+    z-index: 1;
+}
 @media only screen and (max-width: 480px) {
     .main  {
         margin-top: 2em;
@@ -232,7 +352,7 @@ form a{
     }
     .header__details {
         font-size: 20px;
-        width: 100%; 
+                width: 100%; 
         margin-top: 1em;
         line-height: 35px;
     }
@@ -262,5 +382,10 @@ form a{
     }
     .nav-bar__middle {
         display: none;
+    }
+    .flowspace__container {
+        height: 76vh;
+        overflow-y: auto;
+        grid-template-columns: 1fr;
     }
   }
